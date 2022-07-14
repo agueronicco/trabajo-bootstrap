@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    background-image: url(../images/pattern.png);
+}
+
+.offset-left {
+    margin-left: 5rem;
+}
+
+.offset-right {
+    margin-right: 5rem;
+}
+
+.color__oscuro {
+    background: rgb(236,236,236);
+    background: linear-gradient(179deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+}
+
+.color__claro {
+    background: rgb(236,236,236);
+    background: linear-gradient(359deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+}
+
+.logo {
+    position: absolute;
+    width: 80px;
+}
+
+.logo__mobile {
+    position: inherit;
+    width: 60px;
+}
+
+.titulo__borde {
+    background: none repeat scroll 0 0 gray;
+    height: 2px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hover:hover .transition {
+    opacity: 0.1;
+}
+
+.hover:hover .hide {
+    opacity: 0;
+}
+
+.hover:hover .equipo__redes {
+    opacity: 1;
+}
+
+.transition {
+    transition: .6s ease;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.equipo__redes {
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.equipo__redes__hidden {
+    position: relative;
+    top: 20%;
+}
+
+.gallery a {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.gallery:hover .opacity {
+    opacity: 1;
+}
+
+.img-facebook:hover  {
+    opacity: 1;
+}
+
+.img-instagram:hover  {
+    opacity: 1;
+}
+
+.fa-stack {
+    font-size: 2em;
+    color: #999;
+    transition: all 1s;
+    margin-bottom: 40px;
+}
+
+.fa-stack:hover {
+    color: black;
+}
+
+.fa-right {
+    float: right;
+}
+
+.fa-left {
+    float: left;
+}
+
+ul.social__icons li a img{
+    width: 35px;
+    height: 35px;
+}
+
+.menu__top {
+    background-color: black;
+    height: 50px;
+    width: 40px;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -45px;
+    position: absolute;
+}
+
+.menu__top__inside {
+    background-image: url(../images/top_bg.png);
+    background-size: 18px 11px;
+    background-position: 0 0;
+    height: 22px;
+    left: 11px;
+    position: absolute;
+    top: 14px;
+    transition: background-position .3s linear 0s;
+    width: 18px;
+}
+
+.menu__top__inside:hover{
+    animation:subeflecha .3s linear infinite
+}
+
+@keyframes subeflecha{
+    0%{background-position:0 0}
+    100%{background-position:0 -10px}
+}
+
+@media (min-width: 990px) {
+    .nav__padding {
+        padding-left: 4.5rem !important;
+    }
+    .position__end {
+        display:flex;
+        justify-content: end;
+    }
+    .position__start {
+        display: flex;
+    }
+}
